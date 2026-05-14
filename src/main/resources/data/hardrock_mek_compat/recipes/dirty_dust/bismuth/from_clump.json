@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "ingredient": {
+      "item": "hardrock_mek_compat:clump_bismuth"
+    }
+  },
+  "output": {
+    "item": "hardrock_mek_compat:dust_dirty_bismuth"
+  }
+}

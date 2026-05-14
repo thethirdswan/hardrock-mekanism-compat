@@ -1,0 +1,15 @@
+{
+  "type": "mekanism:washing",
+  "fluidInput": {
+    "amount": 5,
+    "tag": "minecraft:water"
+  },
+  "slurryInput": {
+    "amount": 1,
+    "slurry": "hardrock_mek_compat:dirty_nickel"
+  },
+  "output": {
+    "slurry": "hardrock_mek_compat:clean_nickel",
+    "amount": 1
+  }
+}

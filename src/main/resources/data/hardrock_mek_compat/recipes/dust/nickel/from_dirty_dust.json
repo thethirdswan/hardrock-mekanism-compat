@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "ingredient": {
+      "item": "hardrock_mek_compat:dust_dirty_nickel"
+    }
+  },
+  "output": {
+    "item": "hardrock_mek_compat:dust_nickel"
+  }
+}

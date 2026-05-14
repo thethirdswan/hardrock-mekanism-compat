@@ -1,0 +1,15 @@
+{
+  "type": "mekanism:washing",
+  "fluidInput": {
+    "amount": 5,
+    "tag": "minecraft:water"
+  },
+  "slurryInput": {
+    "amount": 1,
+    "slurry": "hardrock_mek_compat:dirty_aluminum"
+  },
+  "output": {
+    "slurry": "hardrock_mek_compat:clean_aluminum",
+    "amount": 1
+  }
+}

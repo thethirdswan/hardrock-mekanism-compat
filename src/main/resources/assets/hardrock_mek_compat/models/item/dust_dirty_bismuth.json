@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hardrock_mek_compat:item/dusts/dirty/dust_dirty_bismuth"
+  }
+}

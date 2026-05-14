@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hardrock_mek_compat:item/dusts/clean/dust_nickel"
+  }
+}

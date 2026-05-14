@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crystallizing",
+  "chemicalType": "slurry",
+  "input": {
+    "amount": 200,
+    "slurry": "hardrock_mek_compat:clean_nickel"
+  },
+  "output": {
+    "item": "hardrock_mek_compat:crystal_nickel"
+  }
+}
