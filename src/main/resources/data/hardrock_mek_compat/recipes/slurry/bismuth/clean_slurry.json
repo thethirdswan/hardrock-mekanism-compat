@@ -4,12 +4,12 @@
     "amount": 5,
     "tag": "minecraft:water"
   },
+  "output": {
+    "amount": 1,
+    "slurry": "hardrock_mek_compat:clean_bismuth"
+  },
   "slurryInput": {
     "amount": 1,
     "slurry": "hardrock_mek_compat:dirty_bismuth"
-  },
-  "output": {
-    "slurry": "hardrock_mek_compat:clean_bismuth",
-    "amount": 1
   }
 }

@@ -1,13 +1,13 @@
 {
   "type": "mekanism:injecting",
+  "chemicalInput": {
+    "amount": 1,
+    "gas": "mekanism:hydrogen_chloride"
+  },
   "itemInput": {
     "ingredient": {
       "item": "hardrock_mek_compat:crystal_chromium"
     }
-  },
-  "chemicalInput": {
-    "amount": 1,
-    "gas": "mekanism:hydrogen_chloride"
   },
   "output": {
     "item": "hardrock_mek_compat:shard_chromium"

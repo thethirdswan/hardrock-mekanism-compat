@@ -1,14 +1,14 @@
 {
   "type": "mekanism:purifying",
+  "chemicalInput": {
+    "amount": 1,
+    "gas": "mekanism:oxygen"
+  },
   "itemInput": {
     "amount": 10,
     "ingredient": {
       "item": "tfcorewashing:chunks_garnierite"
     }
-  },
-  "chemicalInput": {
-    "amount": 1,
-    "gas": "mekanism:oxygen"
   },
   "output": {
     "item": "hardrock_mek_compat:clump_nickel"

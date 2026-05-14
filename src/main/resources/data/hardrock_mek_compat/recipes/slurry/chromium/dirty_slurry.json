@@ -1,18 +1,18 @@
 {
   "type": "mekanism:dissolution",
+  "gasInput": {
+    "amount": 1,
+    "gas": "mekanism:sulfuric_acid"
+  },
   "itemInput": {
     "amount": 20,
     "ingredient": {
       "item": "tfcorewashing:chunks_chromite"
     }
   },
-  "gasInput": {
-    "amount": 1,
-    "gas": "mekanism:sulfuric_acid"
-  },
   "output": {
-    "slurry": "hardrock_mek_compat:dirty_chromium",
     "amount": 1000,
-    "chemicalType": "slurry"
+    "chemicalType": "slurry",
+    "slurry": "hardrock_mek_compat:dirty_chromium"
   }
 }

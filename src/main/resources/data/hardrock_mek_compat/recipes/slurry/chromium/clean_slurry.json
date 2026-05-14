@@ -4,12 +4,12 @@
     "amount": 5,
     "tag": "minecraft:water"
   },
+  "output": {
+    "amount": 1,
+    "slurry": "hardrock_mek_compat:clean_chromium"
+  },
   "slurryInput": {
     "amount": 1,
     "slurry": "hardrock_mek_compat:dirty_chromium"
-  },
-  "output": {
-    "slurry": "hardrock_mek_compat:clean_chromium",
-    "amount": 1
   }
 }

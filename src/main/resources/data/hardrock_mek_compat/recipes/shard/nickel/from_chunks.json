@@ -1,14 +1,14 @@
 {
   "type": "mekanism:injecting",
+  "chemicalInput": {
+    "amount": 1,
+    "gas": "mekanism:hydrogen_chloride"
+  },
   "itemInput": {
     "amount": 5,
     "ingredient": {
       "item": "tfcorewashing:chunks_garnierite"
     }
-  },
-  "chemicalInput": {
-    "amount": 1,
-    "gas": "mekanism:hydrogen_chloride"
   },
   "output": {
     "item": "hardrock_mek_compat:shard_nickel"

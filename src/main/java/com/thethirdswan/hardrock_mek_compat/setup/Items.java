@@ -25,8 +25,8 @@ public class Items {
     public static final ItemDeferredRegister MEKANISM_ITEMS = new ItemDeferredRegister(HardrockMekanismCompat.MOD_ID);
     public static final SlurryDeferredRegister MEKANISM_SLURRIES = new SlurryDeferredRegister(HardrockMekanismCompat.MOD_ID);
 
-    public static void init() {
-        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+    public static void init(FMLJavaModLoadingContext context) {
+        IEventBus eventBus = context.getModEventBus();
         MEKANISM_ITEMS.register(eventBus);
         MEKANISM_SLURRIES.register(eventBus);
         mekItemInit();

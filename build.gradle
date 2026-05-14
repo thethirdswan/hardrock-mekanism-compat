@@ -127,13 +127,13 @@ repositories {
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    implementation fg.deobf("blank:tfc-ore-washing-1.18.2-forge:1.0.2")
 
-    implementation fg.deobf("curse.maven:terrafirmacraft-302973:5065452")
-    implementation fg.deobf("curse.maven:patchouli-306770:3729975")
-    implementation fg.deobf("curse.maven:firmalife-453394:4788653")
-    implementation fg.deobf("curse.maven:mekanism-268560:3875976")
-    implementation fg.deobf("blusunrize.immersiveengineering:ImmersiveEngineering:1.18.2-8.4.0-161")
+    implementation fg.deobf("curse.maven:jei-238222:7920915")
+    implementation fg.deobf("curse.maven:terrafirmacraft-302973:8063607")
+    implementation fg.deobf("curse.maven:patchouli-306770:7731017")
+    implementation fg.deobf("curse.maven:firmalife-453394:7602336")
+    implementation fg.deobf("curse.maven:mekanism-268560:6552911")
+    implementation fg.deobf("blusunrize.immersiveengineering:ImmersiveEngineering:1.20.1-9.4.0-166.40")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

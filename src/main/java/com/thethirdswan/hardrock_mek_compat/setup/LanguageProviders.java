@@ -5,6 +5,7 @@ import mekanism.api.chemical.slurry.Slurry;
 import mekanism.common.registration.impl.ItemRegistryObject;
 import mekanism.common.registration.impl.SlurryRegistryObject;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.data.LanguageProvider;
 
@@ -15,8 +16,8 @@ import java.util.regex.Pattern;
 import static com.thethirdswan.hardrock_mek_compat.setup.Items.*;
 
 public class LanguageProviders extends LanguageProvider {
-	public LanguageProviders(DataGenerator gen, String locale) {
-		super(gen, HardrockMekanismCompat.MOD_ID, locale);
+	public LanguageProviders(PackOutput output, String locale) {
+		super(output, HardrockMekanismCompat.MOD_ID, locale);
 	}
 	// pattern to obtain metal type
 	final Pattern pattern = Pattern.compile("^[A-Za-z]+");

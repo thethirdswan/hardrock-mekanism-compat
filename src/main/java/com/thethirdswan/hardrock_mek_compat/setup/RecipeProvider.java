@@ -15,6 +15,7 @@ import mekanism.common.registration.impl.ItemRegistryObject;
 import mekanism.common.registration.impl.SlurryRegistryObject;
 import mekanism.common.registries.MekanismGases;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.FluidTags;
@@ -24,18 +25,18 @@ import org.slf4j.Logger;
 import static com.thethirdswan.hardrock_mek_compat.setup.Items.*;
 
 public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
-    public RecipeProvider(DataGenerator generator) {
-        super(generator);
+    public RecipeProvider(PackOutput output) {
+        super(output);
+    }
+
+    @Override
+    protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
+        buildMekOreProcessingRecipes(consumer);
     }
 
     // pattern to obtain metal type
     final Pattern pattern = Pattern.compile("^[A-Za-z]+");
     private static final Logger LOGGER = LogUtils.getLogger();
-
-    @Override
-    protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
-        buildMekOreProcessingRecipes(consumer);
-    }
 
     protected void buildMekOreProcessingRecipes(Consumer<FinishedRecipe> consumer) {
         // general ore processing

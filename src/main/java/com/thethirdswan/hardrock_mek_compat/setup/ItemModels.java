@@ -2,12 +2,13 @@ package com.thethirdswan.hardrock_mek_compat.setup;
 
 import com.thethirdswan.hardrock_mek_compat.HardrockMekanismCompat;
 import mekanism.common.registration.impl.ItemRegistryObject;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.Objects;
 import java.util.Set;
@@ -17,8 +18,8 @@ import java.util.regex.Pattern;
 import static com.thethirdswan.hardrock_mek_compat.setup.Items.*;
 
 public class ItemModels extends ItemModelProvider {
-    public ItemModels(DataGenerator generator, ExistingFileHelper existingFileHelper) {
-        super(generator, HardrockMekanismCompat.MOD_ID, existingFileHelper);
+    public ItemModels(PackOutput output, ExistingFileHelper existingFileHelper) {
+        super(output, HardrockMekanismCompat.MOD_ID, existingFileHelper);
     }
 
     // pattern for getting item type
@@ -85,17 +86,17 @@ public class ItemModels extends ItemModelProvider {
 
     private ItemModelBuilder mekOreProcessingItemModels(Item item, String itemType) {
         if (Objects.equals(itemType, "dust_dirty")) {
-            return withExistingParent(item.getRegistryName().getPath(),
+            return withExistingParent(ForgeRegistries.ITEMS.getKey(item).getPath(),
                     ResourceLocation.parse("item/generated")).texture("layer0",
-                    ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "item/dusts/dirty/" + item.getRegistryName().getPath()));
+                    ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "item/dusts/dirty/" + ForgeRegistries.ITEMS.getKey(item).getPath()));
         } else if (Objects.equals(itemType, "dust")) {
-            return withExistingParent(item.getRegistryName().getPath(),
+            return withExistingParent(ForgeRegistries.ITEMS.getKey(item).getPath(),
                     ResourceLocation.parse("item/generated")).texture("layer0",
-                    ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "item/dusts/clean/" + item.getRegistryName().getPath()));
+                    ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "item/dusts/clean/" + ForgeRegistries.ITEMS.getKey(item).getPath()));
         } else {
-            return withExistingParent(item.getRegistryName().getPath(),
+            return withExistingParent(ForgeRegistries.ITEMS.getKey(item).getPath(),
                     ResourceLocation.parse("item/generated")).texture("layer0",
-                    ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "item/" + itemType + "/" + item.getRegistryName().getPath()));
+                    ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "item/" + itemType + "/" + ForgeRegistries.ITEMS.getKey(item).getPath()));
         }
     }
 }
