@@ -1,7 +1,7 @@
 package com.thethirdswan.hardrock_mek_compat.setup;
 
 import com.thethirdswan.hardrock_mek_compat.HardrockMekanismCompat;
-import mekanism.common.registration.impl.ItemRegistryObject;
+import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -26,64 +26,64 @@ public class ItemModels extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        for (ItemRegistryObject<Item> item : dusts.values()) {
+        for (RegistryObject<Item> item : dusts.values()) {
             Set<String> keySet = dusts.keySet();
             for (String key : keySet) {
                 if (dusts.get(key) == item) {
                     final Matcher matcher = pattern.matcher(key);
                     matcher.find();
                     String item_type = matcher.group();
-                    mekOreProcessingItemModels(item.get(), item_type.toLowerCase());
+                    itemModels(item.get(), item_type.toLowerCase());
                 }
             }
         }
-        for (ItemRegistryObject<Item> item : dirty_dusts.values()) {
+        for (RegistryObject<Item> item : dirty_dusts.values()) {
             Set<String> keySet = dirty_dusts.keySet();
             for (String key : keySet) {
                 if (dirty_dusts.get(key) == item) {
                     final Matcher matcher = pattern.matcher(key);
                     matcher.find();
                     String item_type = matcher.group();
-                    mekOreProcessingItemModels(item.get(), item_type.toLowerCase());
+                    itemModels(item.get(), item_type.toLowerCase());
                 }
             }
         }
-        for (ItemRegistryObject<Item> item : clumps.values()) {
+        for (RegistryObject<Item> item : clumps.values()) {
             Set<String> keySet = clumps.keySet();
             for (String key : keySet) {
                 if (clumps.get(key) == item) {
                     final Matcher matcher = pattern.matcher(key);
                     matcher.find();
                     String item_type = matcher.group();
-                    mekOreProcessingItemModels(item.get(), item_type.toLowerCase());
+                    itemModels(item.get(), item_type.toLowerCase());
                 }
             }
         }
-        for (ItemRegistryObject<Item> item : shards.values()) {
+        for (RegistryObject<Item> item : shards.values()) {
             Set<String> keySet = shards.keySet();
             for (String key : keySet) {
                 if (shards.get(key) == item) {
                     final Matcher matcher = pattern.matcher(key);
                     matcher.find();
                     String item_type = matcher.group();
-                    mekOreProcessingItemModels(item.get(), item_type.toLowerCase());
+                    itemModels(item.get(), item_type.toLowerCase());
                 }
             }
         }
-        for (ItemRegistryObject<Item> item : crystals.values()) {
+        for (RegistryObject<Item> item : crystals.values()) {
             Set<String> keySet = crystals.keySet();
             for (String key : keySet) {
                 if (crystals.get(key) == item) {
                     final Matcher matcher = pattern.matcher(key);
                     matcher.find();
                     String item_type = matcher.group();
-                    mekOreProcessingItemModels(item.get(), item_type.toLowerCase());
+                    itemModels(item.get(), item_type.toLowerCase());
                 }
             }
         }
     }
 
-    private ItemModelBuilder mekOreProcessingItemModels(Item item, String itemType) {
+    private ItemModelBuilder itemModels(Item item, String itemType) {
         if (Objects.equals(itemType, "dust_dirty")) {
             return withExistingParent(item.getRegistryName().getPath(),
                     ResourceLocation.parse("item/generated")).texture("layer0",
