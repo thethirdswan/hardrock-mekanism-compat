@@ -40,5 +40,6 @@
   "slurry.hardrock_mek_compat.dirty_chromium": "Dirty Chromium Slurry",
   "slurry.hardrock_mek_compat.dirty_nickel": "Dirty Nickel Slurry",
   "slurry.hardrock_mek_compat.dirty_silver": "Dirty Silver Slurry",
-  "slurry.hardrock_mek_compat.dirty_zinc": "Dirty Zinc Slurry"
+  "slurry.hardrock_mek_compat.dirty_zinc": "Dirty Zinc Slurry",
+  "itemGroup.hardrock_mek_compat": "Hardrock Mekanism Compat"
 }

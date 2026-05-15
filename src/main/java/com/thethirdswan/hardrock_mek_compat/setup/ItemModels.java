@@ -1,7 +1,6 @@
 package com.thethirdswan.hardrock_mek_compat.setup;
 
 import com.thethirdswan.hardrock_mek_compat.HardrockMekanismCompat;
-import mekanism.common.registration.impl.ItemRegistryObject;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -9,6 +8,7 @@ import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Objects;
 import java.util.Set;
@@ -27,7 +27,7 @@ public class ItemModels extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        for (ItemRegistryObject<Item> item : dusts.values()) {
+        for (RegistryObject<Item> item : dusts.values()) {
             Set<String> keySet = dusts.keySet();
             for (String key : keySet) {
                 if (dusts.get(key) == item) {
@@ -38,7 +38,7 @@ public class ItemModels extends ItemModelProvider {
                 }
             }
         }
-        for (ItemRegistryObject<Item> item : dirty_dusts.values()) {
+        for (RegistryObject<Item> item : dirty_dusts.values()) {
             Set<String> keySet = dirty_dusts.keySet();
             for (String key : keySet) {
                 if (dirty_dusts.get(key) == item) {
@@ -49,7 +49,7 @@ public class ItemModels extends ItemModelProvider {
                 }
             }
         }
-        for (ItemRegistryObject<Item> item : clumps.values()) {
+        for (RegistryObject<Item> item : clumps.values()) {
             Set<String> keySet = clumps.keySet();
             for (String key : keySet) {
                 if (clumps.get(key) == item) {
@@ -60,7 +60,7 @@ public class ItemModels extends ItemModelProvider {
                 }
             }
         }
-        for (ItemRegistryObject<Item> item : shards.values()) {
+        for (RegistryObject<Item> item : shards.values()) {
             Set<String> keySet = shards.keySet();
             for (String key : keySet) {
                 if (shards.get(key) == item) {
@@ -71,7 +71,7 @@ public class ItemModels extends ItemModelProvider {
                 }
             }
         }
-        for (ItemRegistryObject<Item> item : crystals.values()) {
+        for (RegistryObject<Item> item : crystals.values()) {
             Set<String> keySet = crystals.keySet();
             for (String key : keySet) {
                 if (crystals.get(key) == item) {
