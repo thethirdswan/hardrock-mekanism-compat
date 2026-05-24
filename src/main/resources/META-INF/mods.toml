@@ -6,7 +6,7 @@ modId="hardrock_mek_compat"
 version="${mod_version}"
 displayName="${mod_name}"
 authors="${mod_authors}"
-logoFile = "placeholder.png"
+logoFile = "hardrock_mek_compat.jpg"
 
 description='''${mod_description}'''
 [[dependencies.hardrock_mek_compat]]
