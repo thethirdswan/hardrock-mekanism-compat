@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "hardrock_mek_compat:slurry/nickel_base_color"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "hardrock_mek_compat:slurry/silver_base_color"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "hardrock_mek_compat:slurry/zinc_base_color"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "hardrock_mek_compat:slurry/aluminum_base_color"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "hardrock_mek_compat:slurry/chromium_base_color"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "hardrock_mek_compat:slurry/bismuth_base_color"
+    }
+  ]
+}

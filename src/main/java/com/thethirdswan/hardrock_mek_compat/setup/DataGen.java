@@ -29,6 +29,7 @@ public class DataGen {
 
 
         generator.addProvider(event.includeClient(), new ItemModels(output, exHelper));
+        generator.addProvider(event.includeClient(), new HardRockMekanismSpriteProvider(output, exHelper));
         generator.addProvider(event.includeClient(), new LanguageProviders(output, "en_us"));
 
     }
