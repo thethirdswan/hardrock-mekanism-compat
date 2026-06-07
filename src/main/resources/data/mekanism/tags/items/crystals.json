@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "hardrock_mek_compat:crystal_bismuth",
+    "hardrock_mek_compat:crystal_aluminum",
+    "hardrock_mek_compat:crystal_nickel",
+    "hardrock_mek_compat:crystal_chromium",
+    "hardrock_mek_compat:crystal_zinc",
+    "hardrock_mek_compat:crystal_silver"
+  ]
+}

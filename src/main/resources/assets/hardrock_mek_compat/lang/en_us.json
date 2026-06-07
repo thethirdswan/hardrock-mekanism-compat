@@ -29,6 +29,7 @@
   "item.hardrock_mek_compat.shard_nickel": "Nickel Shard",
   "item.hardrock_mek_compat.shard_silver": "Silver Shard",
   "item.hardrock_mek_compat.shard_zinc": "Zinc Shard",
+  "itemGroup.hardrock_mek_compat": "Hardrock Mekanism Compat",
   "slurry.hardrock_mek_compat.clean_aluminum": "Aluminum Slurry",
   "slurry.hardrock_mek_compat.clean_bismuth": "Bismuth Slurry",
   "slurry.hardrock_mek_compat.clean_chromium": "Chromium Slurry",
@@ -40,6 +41,5 @@
   "slurry.hardrock_mek_compat.dirty_chromium": "Dirty Chromium Slurry",
   "slurry.hardrock_mek_compat.dirty_nickel": "Dirty Nickel Slurry",
   "slurry.hardrock_mek_compat.dirty_silver": "Dirty Silver Slurry",
-  "slurry.hardrock_mek_compat.dirty_zinc": "Dirty Zinc Slurry",
-  "itemGroup.hardrock_mek_compat": "Hardrock Mekanism Compat"
+  "slurry.hardrock_mek_compat.dirty_zinc": "Dirty Zinc Slurry"
 }

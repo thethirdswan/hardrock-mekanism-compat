@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "hardrock_mek_compat:shard_zinc",
+    "hardrock_mek_compat:shard_aluminum",
+    "hardrock_mek_compat:shard_silver",
+    "hardrock_mek_compat:shard_chromium",
+    "hardrock_mek_compat:shard_nickel",
+    "hardrock_mek_compat:shard_bismuth"
+  ]
+}

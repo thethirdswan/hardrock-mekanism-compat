@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "hardrock_mek_compat:clump_bismuth",
+    "hardrock_mek_compat:clump_zinc",
+    "hardrock_mek_compat:clump_silver",
+    "hardrock_mek_compat:clump_chromium",
+    "hardrock_mek_compat:clump_aluminum",
+    "hardrock_mek_compat:clump_nickel"
+  ]
+}

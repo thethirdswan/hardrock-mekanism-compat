@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "hardrock_mek_compat:dust_chromium",
+    "hardrock_mek_compat:dust_bismuth",
+    "hardrock_mek_compat:dust_silver",
+    "hardrock_mek_compat:dust_zinc",
+    "hardrock_mek_compat:dust_aluminum",
+    "hardrock_mek_compat:dust_nickel"
+  ]
+}
