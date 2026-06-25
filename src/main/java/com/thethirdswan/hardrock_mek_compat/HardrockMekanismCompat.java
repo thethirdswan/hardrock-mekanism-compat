@@ -39,6 +39,7 @@ public class HardrockMekanismCompat
                 dirty_dusts.forEach((K, V) -> output.accept(V.get()));
                 clumps.forEach((K, V) -> output.accept(V.get()));
                 crystals.forEach((K, V) -> output.accept(V.get()));
+                output.accept(NUTRIMIX.get());
             }).build());
 
     public HardrockMekanismCompat(FMLJavaModLoadingContext context)

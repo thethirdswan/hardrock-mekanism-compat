@@ -29,6 +29,7 @@ public class LanguageProviders extends LanguageProvider {
 	@Override
 	protected void addTranslations() {
 		add("itemGroup.hardrock_mek_compat", "Hardrock Mekanism Compat");
+		add(NUTRIMIX.get(), "Nutritional Mix");
 		for (RegistryObject<Item> dust : dusts.values()) {
 			Set<String> keySet = dusts.keySet();
 			for (String key : keySet) {

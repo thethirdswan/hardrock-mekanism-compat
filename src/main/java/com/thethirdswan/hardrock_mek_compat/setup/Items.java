@@ -11,6 +11,7 @@ import mekanism.common.registration.impl.ItemRegistryObject;
 import mekanism.common.registration.impl.SlurryDeferredRegister;
 import mekanism.common.registration.impl.SlurryRegistryObject;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -34,6 +35,7 @@ public class Items {
         MEKANISM_SLURRIES.register(eventBus);
         itemInit();
     }
+    public static RegistryObject<Item> NUTRIMIX = ITEMS.register("nutrimix", () -> new Item(new Item.Properties()));
 
     public static Map<String, RegistryObject<Item>> dusts = new HashMap<>();
     public static Map<String, RegistryObject<Item>> dirty_dusts = new HashMap<>();

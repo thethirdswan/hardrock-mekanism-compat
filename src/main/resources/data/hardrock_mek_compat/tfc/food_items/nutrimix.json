@@ -1,0 +1,13 @@
+{
+  "ingredient": {
+    "item": "hardrock_mek_compat:nutrimix"
+  },
+  "hunger": 2,
+  "water": 40,
+  "saturation": 0,
+  "decay_modifier": 3,
+  "grain": 0.8,
+  "fruit": 0.8,
+  "vegetables": 0.8,
+  "protein": 0.8
+}
