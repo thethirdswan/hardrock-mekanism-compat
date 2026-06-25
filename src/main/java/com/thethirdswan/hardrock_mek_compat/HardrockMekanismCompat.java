@@ -26,7 +26,7 @@ public class HardrockMekanismCompat
 {
     // Directly reference a slf4j logger
     public static final String MOD_ID = "hardrock_mek_compat";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public HardrockMekanismCompat()
     {

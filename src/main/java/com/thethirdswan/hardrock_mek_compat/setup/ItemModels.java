@@ -26,6 +26,8 @@ public class ItemModels extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        withExistingParent(NUTRIMIX.get().getRegistryName().getPath(), ResourceLocation.parse("item/generated")).texture("layer0", ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "item/" + NUTRIMIX.get().getRegistryName().getPath()));
+
         for (RegistryObject<Item> item : dusts.values()) {
             Set<String> keySet = dusts.keySet();
             for (String key : keySet) {

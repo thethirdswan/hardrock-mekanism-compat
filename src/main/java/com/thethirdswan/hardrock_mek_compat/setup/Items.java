@@ -8,6 +8,7 @@ import mekanism.api.chemical.slurry.Slurry;
 import mekanism.api.chemical.slurry.SlurryBuilder;
 import mekanism.common.registration.impl.SlurryDeferredRegister;
 import mekanism.common.registration.impl.SlurryRegistryObject;
+import net.dries007.tfc.common.items.DecayingItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -34,6 +35,7 @@ public class Items {
         MEKANISM_SLURRIES.register(eventBus);
         itemInit();
     }
+    public static RegistryObject<Item> NUTRIMIX = ITEMS.register("nutrimix", () -> new DecayingItem(new Item.Properties().tab(ITEM_GROUP)));
 
     public static Map<String, RegistryObject<Item>> dusts = new HashMap<>();
     public static Map<String, RegistryObject<Item>> dirty_dusts = new HashMap<>();
