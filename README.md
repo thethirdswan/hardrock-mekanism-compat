@@ -4,3 +4,5 @@ The compatibility added for ores includes:
 - Chromium [Firmalife]
 - Aluminum [Immersive Engineering]
 - Nickel, Silver, Zinc, Bismuth [TerraFirmaCraft]
+
+This mod also makes Nutritional Paste compatible with TFC's hunger and nutrition system!
