@@ -26,22 +26,22 @@ modId = "tfc"
 mandatory = true
 versionRange = "[3.2.21,)"
 ordering = "NONE"
-side = "CLIENT"
+side = "BOTH"
 [[dependencies.hardrock_mek_compat]]
 modId = "mekanism"
 mandatory = true
 versionRange = "[1.20.1-10.4.16.80,)"
 ordering = "NONE"
-side = "CLIENT"
+side = "BOTH"
 [[dependencies.hardrock_mek_compat]]
 modId = "immersiveengineering"
 mandatory = true
 versionRange = "[1.20.1-9.4.0-166.40,)"
 ordering = "NONE"
-side = "CLIENT"
+side = "BOTH"
 [[dependencies.hardrock_mek_compat]]
 modId = "firmalife"
 mandatory = true
 versionRange = "[2.1.27,)"
 ordering = "NONE"
-side = "CLIENT"
+side = "BOTH"
