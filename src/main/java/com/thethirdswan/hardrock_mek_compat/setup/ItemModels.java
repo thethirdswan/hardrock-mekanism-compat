@@ -26,7 +26,7 @@ public class ItemModels extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        withExistingParent(NUTRIMIX.get().getRegistryName().getPath(), ResourceLocation.parse("item/generated")).texture("layer0", ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "item/" + NUTRIMIX.get().getRegistryName().getPath()));
+        withExistingParent(NUTRIMIX.get().getRegistryName().getPath(), new ResourceLocation("item/generated")).texture("layer0", new ResourceLocation(HardrockMekanismCompat.MOD_ID, "item/" + NUTRIMIX.get().getRegistryName().getPath()));
 
         for (RegistryObject<Item> item : dusts.values()) {
             Set<String> keySet = dusts.keySet();
@@ -88,16 +88,16 @@ public class ItemModels extends ItemModelProvider {
     private ItemModelBuilder itemModels(Item item, String itemType) {
         if (Objects.equals(itemType, "dust_dirty")) {
             return withExistingParent(item.getRegistryName().getPath(),
-                    ResourceLocation.parse("item/generated")).texture("layer0",
-                    ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "item/dusts/dirty/" + item.getRegistryName().getPath()));
+                    new ResourceLocation("item/generated")).texture("layer0",
+                    new ResourceLocation(HardrockMekanismCompat.MOD_ID, "item/dusts/dirty/" + item.getRegistryName().getPath()));
         } else if (Objects.equals(itemType, "dust")) {
             return withExistingParent(item.getRegistryName().getPath(),
-                    ResourceLocation.parse("item/generated")).texture("layer0",
-                    ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "item/dusts/clean/" + item.getRegistryName().getPath()));
+                    new ResourceLocation("item/generated")).texture("layer0",
+                    new ResourceLocation(HardrockMekanismCompat.MOD_ID, "item/dusts/clean/" + item.getRegistryName().getPath()));
         } else {
             return withExistingParent(item.getRegistryName().getPath(),
-                    ResourceLocation.parse("item/generated")).texture("layer0",
-                    ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "item/" + itemType + "/" + item.getRegistryName().getPath()));
+                    new ResourceLocation("item/generated")).texture("layer0",
+                    new ResourceLocation(HardrockMekanismCompat.MOD_ID, "item/" + itemType + "/" + item.getRegistryName().getPath()));
         }
     }
 }

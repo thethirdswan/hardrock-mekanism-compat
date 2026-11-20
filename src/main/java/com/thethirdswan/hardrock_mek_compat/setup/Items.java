@@ -51,7 +51,7 @@ public class Items {
             clumps.put(resource.name() + "_CLUMP", ITEMS.register("clump_" + resource.getName(), () -> new Item(new Item.Properties().tab(ITEM_GROUP))));
             shards.put(resource.name() + "_SHARD", ITEMS.register("shard_" + resource.getName(), () -> new Item(new Item.Properties().tab(ITEM_GROUP))));
             crystals.put(resource.name() + "_CRYSTAL", ITEMS.register("crystal_" + resource.getName(), () -> new Item(new Item.Properties().tab(ITEM_GROUP))));
-            slurries.put(resource.name() + "_SLURRY", MEKANISM_SLURRIES.register(resource.getName(), Slurry -> SlurryBuilder.builder(ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "slurry/" + resource.getName() + "_base_color"))));
+            slurries.put(resource.name() + "_SLURRY", MEKANISM_SLURRIES.register(resource.getName(), Slurry -> SlurryBuilder.builder(new ResourceLocation(HardrockMekanismCompat.MOD_ID, "slurry/" + resource.getName() + "_base_color"))));
         }
     }
 }

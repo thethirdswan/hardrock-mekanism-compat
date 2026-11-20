@@ -16,54 +16,54 @@ public class ItemTags extends ItemTagsProvider {
 	}
 
 	public static final TagKey<Item> NICKEL_INGOT = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("forge", "ingots/nickel"));
+			new ResourceLocation("forge", "ingots/nickel"));
 	public static final TagKey<Item> SILVER_INGOT = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("forge", "ingots/silver"));
+			new ResourceLocation("forge", "ingots/silver"));
 	public static final TagKey<Item> BISMUTH_INGOT = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("forge", "ingots/bismuth"));
+			new ResourceLocation("forge", "ingots/bismuth"));
 	public static final TagKey<Item> ALUMINUM_INGOT = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("forge", "ingots/aluminum"));
+			new ResourceLocation("forge", "ingots/aluminum"));
 	public static final TagKey<Item> CHROMIUM_INGOT = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("forge", "ingots/chromium"));
+			new ResourceLocation("forge", "ingots/chromium"));
 	public static final TagKey<Item> ZINC_INGOT = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("forge", "ingots/zinc"));
+			new ResourceLocation("forge", "ingots/zinc"));
 
 	public static final TagKey<Item> NICKEL_DUST = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("forge", "dusts/nickel"));
+			new ResourceLocation("forge", "dusts/nickel"));
 	public static final TagKey<Item> SILVER_DUST = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("forge", "dusts/silver"));
+			new ResourceLocation("forge", "dusts/silver"));
 	public static final TagKey<Item> BISMUTH_DUST = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("forge", "dusts/bismuth"));
+			new ResourceLocation("forge", "dusts/bismuth"));
 	public static final TagKey<Item> ALUMINUM_DUST = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("forge", "dusts/aluminium"));
+			new ResourceLocation("forge", "dusts/aluminium"));
 	public static final TagKey<Item> CHROMIUM_DUST = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("forge", "dusts/chromium"));
+			new ResourceLocation("forge", "dusts/chromium"));
 	public static final TagKey<Item> ZINC_DUST = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("forge", "dusts/zinc"));
+			new ResourceLocation("forge", "dusts/zinc"));
 
 	public static final TagKey<Item> DUSTS = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("forge", "dusts"));
+			new ResourceLocation("forge", "dusts"));
 	public static final TagKey<Item> DIRTY_DUSTS = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("mekanism", "dirty_dusts"));
+			new ResourceLocation("mekanism", "dirty_dusts"));
 	public static final TagKey<Item> CLUMPS = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("mekanism", "clumps"));
+			new ResourceLocation("mekanism", "clumps"));
 	public static final TagKey<Item> SHARDS = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("mekanism", "shards"));
+			new ResourceLocation("mekanism", "shards"));
 	public static final TagKey<Item> CRYSTALS = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("mekanism", "crystals"));
+			new ResourceLocation("mekanism", "crystals"));
 	public static final TagKey<Item> HOURGLASS_DUSTS = TagKey.create(Registry.ITEM_REGISTRY,
-			ResourceLocation.fromNamespaceAndPath("supplementaries", "hourglass_dusts"));
+			new ResourceLocation("supplementaries", "hourglass_dusts"));
 
 
 	@Override
 	protected void addTags() {
 		// come on, you can do a little better than to reference an ingot with a custom tag
-//		tag(NICKEL_INGOT).add(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(ResourceLocation.fromNamespaceAndPath("tfc", "metal/ingot/nickel"))));
-//		tag(ZINC_INGOT).add(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(ResourceLocation.fromNamespaceAndPath("tfc", "metal/ingot/zinc"))));
-//		tag(BISMUTH_INGOT).add(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(ResourceLocation.fromNamespaceAndPath("tfc", "metal/ingot/bismuth"))));
-//		tag(SILVER_INGOT).add(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(ResourceLocation.fromNamespaceAndPath("tfc", "metal/ingot/silver"))));
-//		tag(ALUMINUM_INGOT).add(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(ResourceLocation.fromNamespaceAndPath("immersiveengineering", "ingot_aluminum"))));
-//		tag(CHROMIUM_INGOT).add(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(ResourceLocation.fromNamespaceAndPath("firmalife", "metal/ingot/chromium"))));
+//		tag(NICKEL_INGOT).add(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation("tfc", "metal/ingot/nickel"))));
+//		tag(ZINC_INGOT).add(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation("tfc", "metal/ingot/zinc"))));
+//		tag(BISMUTH_INGOT).add(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation("tfc", "metal/ingot/bismuth"))));
+//		tag(SILVER_INGOT).add(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation("tfc", "metal/ingot/silver"))));
+//		tag(ALUMINUM_INGOT).add(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation("immersiveengineering", "ingot_aluminum"))));
+//		tag(CHROMIUM_INGOT).add(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation("firmalife", "metal/ingot/chromium"))));
 
 		tag(NICKEL_DUST).add(Items.dusts.get("NICKEL_DUST").get());
 		tag(SILVER_DUST).add(Items.dusts.get("SILVER_DUST").get());

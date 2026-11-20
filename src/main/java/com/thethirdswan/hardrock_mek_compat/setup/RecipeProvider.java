@@ -48,7 +48,7 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                     matcher.find();
                     String metal_type = matcher.group();
                     RegistryObject<Item> inputItem = dirty_dusts.get(metal_type + "_DUST_DIRTY");
-                    ItemStackToItemStackRecipeBuilder.enriching(IngredientCreatorAccess.item().from(inputItem.get()), resultItem.get().getDefaultInstance()).build(consumer, ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "dust/" + metal_type.toLowerCase() + "/from_dirty_dust"));
+                    ItemStackToItemStackRecipeBuilder.enriching(IngredientCreatorAccess.item().from(inputItem.get()), resultItem.get().getDefaultInstance()).build(consumer, new ResourceLocation(HardrockMekanismCompat.MOD_ID, "dust/" + metal_type.toLowerCase() + "/from_dirty_dust"));
                 }
             }
         }
@@ -60,7 +60,7 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                     matcher.find();
                     String metal_type = matcher.group();
                     RegistryObject<Item> inputItem = clumps.get(metal_type + "_CLUMP");
-                    ItemStackToItemStackRecipeBuilder.crushing(IngredientCreatorAccess.item().from(inputItem.get()), resultItem.get().getDefaultInstance()).build(consumer, ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "dirty_dust/" + metal_type.toLowerCase() + "/from_clump"));
+                    ItemStackToItemStackRecipeBuilder.crushing(IngredientCreatorAccess.item().from(inputItem.get()), resultItem.get().getDefaultInstance()).build(consumer, new ResourceLocation(HardrockMekanismCompat.MOD_ID, "dirty_dust/" + metal_type.toLowerCase() + "/from_clump"));
                 }
             }
         }
@@ -76,7 +76,7 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                             IngredientCreatorAccess.item().from(inputItem.get()),
                             IngredientCreatorAccess.gas().from(MekanismGases.OXYGEN, 1),
                             resultItem.get().getDefaultInstance()
-                    ).build(consumer, ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "clump/" + metal_type.toLowerCase() + "/from_shard"));
+                    ).build(consumer, new ResourceLocation(HardrockMekanismCompat.MOD_ID, "clump/" + metal_type.toLowerCase() + "/from_shard"));
                 }
             }
         }
@@ -92,7 +92,7 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                             IngredientCreatorAccess.item().from(inputItem.get()),
                             IngredientCreatorAccess.gas().from(MekanismGases.HYDROGEN_CHLORIDE, 1),
                             resultItem.get().getDefaultInstance()
-                    ).build(consumer, ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "shard/" + metal_type.toLowerCase() + "/from_crystal"));
+                    ).build(consumer, new ResourceLocation(HardrockMekanismCompat.MOD_ID, "shard/" + metal_type.toLowerCase() + "/from_crystal"));
                 }
             }
         }
@@ -104,7 +104,7 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                     matcher.find();
                     String metal_type = matcher.group();
                     SlurryRegistryObject<Slurry, Slurry> slurry = slurries.get(metal_type + "_SLURRY");
-                    ChemicalCrystallizerRecipeBuilder.crystallizing(IngredientCreatorAccess.slurry().from(slurry.getCleanSlurry(), 200), resultItem.get().getDefaultInstance()).build(consumer, ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "crystal/" + metal_type.toLowerCase() + "/from_slurry"));
+                    ChemicalCrystallizerRecipeBuilder.crystallizing(IngredientCreatorAccess.slurry().from(slurry.getCleanSlurry(), 200), resultItem.get().getDefaultInstance()).build(consumer, new ResourceLocation(HardrockMekanismCompat.MOD_ID, "crystal/" + metal_type.toLowerCase() + "/from_slurry"));
                 }
             }
         }
@@ -119,7 +119,7 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                             IngredientCreatorAccess.fluid().from(FluidTags.WATER, 5),
                             IngredientCreatorAccess.slurry().from(slurry.getDirtySlurry(), 1),
                             slurry.getCleanSlurry().getStack(1)
-                    ).build(consumer, ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "slurry/" + metal_type.toLowerCase() + "/clean_slurry"));
+                    ).build(consumer, new ResourceLocation(HardrockMekanismCompat.MOD_ID, "slurry/" + metal_type.toLowerCase() + "/clean_slurry"));
                 }
             }
         }
@@ -138,7 +138,7 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                             IngredientCreatorAccess.item().from(inputItem, 10),
                             IngredientCreatorAccess.gas().from(MekanismGases.OXYGEN, 1),
                             resultItem.get().getDefaultInstance()
-                    ).build(consumer, ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "clump/" + metal_type.toLowerCase() + "/from_chunks"));
+                    ).build(consumer, new ResourceLocation(HardrockMekanismCompat.MOD_ID, "clump/" + metal_type.toLowerCase() + "/from_chunks"));
                 }
             }
         }
@@ -156,7 +156,7 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                             IngredientCreatorAccess.item().from(inputItem, 5),
                             IngredientCreatorAccess.gas().from(MekanismGases.HYDROGEN_CHLORIDE, 1),
                             resultItem.get().getDefaultInstance()
-                    ).build(consumer, ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "shard/" + metal_type.toLowerCase() + "/from_chunks"));
+                    ).build(consumer, new ResourceLocation(HardrockMekanismCompat.MOD_ID, "shard/" + metal_type.toLowerCase() + "/from_chunks"));
                 }
             }
         }
@@ -174,7 +174,7 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                             IngredientCreatorAccess.item().from(inputItem, 20),
                             IngredientCreatorAccess.gas().from(MekanismGases.SULFURIC_ACID, 1),
                             slurry.getDirtySlurry().getStack(1_000)
-                    ).build(consumer, ResourceLocation.fromNamespaceAndPath(HardrockMekanismCompat.MOD_ID, "slurry/" + metal_type.toLowerCase() + "/dirty_slurry"));
+                    ).build(consumer, new ResourceLocation(HardrockMekanismCompat.MOD_ID, "slurry/" + metal_type.toLowerCase() + "/dirty_slurry"));
                 }
             }
         }
